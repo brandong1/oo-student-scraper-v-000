@@ -8,8 +8,8 @@ class Student
   def initialize(student_hash)
     @name = name
     @location = location
-    binding.pry
-
+    #binding.pry
+    @student_hash = student_hash
 
   end
 
