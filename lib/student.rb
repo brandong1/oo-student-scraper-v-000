@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 class Student
 
   attr_accessor :name, :location, :twitter, :linkedin, :github, :blog, :profile_quote, :bio, :profile_url
@@ -21,5 +21,3 @@ class Student
 
   end
 end
-=======
->>>>>>> 66d1189b95d01a50a0242fd491ae78112cc05855
