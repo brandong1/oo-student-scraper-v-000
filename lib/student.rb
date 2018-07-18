@@ -6,7 +6,7 @@ class Student
   @@all = []
 
   def initialize(student_hash)
-    @name = name
+    #@name = name
     @location = :location
     #binding.pry
     @student_hash = student_hash
