@@ -9,7 +9,7 @@ class Student
     # @name = name
     # @location = location
     #binding.pry
-    @student_hash = student_hash
+    # @student_hash = student_hash
     student_hash.each {|key, value| self.send(("#{key}="), value)}
 
     @@all << self
