@@ -1,5 +1,5 @@
 ## Worked on by Maurice Argoetti, Srija Kumar and Brandon Green
-## TOGETHER = pair programming
+## PAIR PROGRAMMING FTW
 
 require 'open-uri'
 
@@ -7,8 +7,12 @@ require 'open-uri'
 
 require 'pry'
 
+<<<<<<< HEAD
 class Scraper
   def self.scrape_index_page(index_url)
+=======
+def self.scrape_index_page(index_url)
+>>>>>>> 66d1189b95d01a50a0242fd491ae78112cc05855
   profiles = []
 
   ind = Nokogiri::HTML(open(index_url))
@@ -17,6 +21,7 @@ class Scraper
   students.each do |profile|
     name = profile.css(".student-name").text
     location = profile.css(".student-location").text
+<<<<<<< HEAD
     profile_url = profile.css("a").attribute("href").value
     profiles << {name: name,
       location: location,
@@ -73,3 +78,35 @@ end
 #       end
 
 #   end
+=======
+    profile_url = "http://127.0.0.1:4000/#{profile.css("a")[0]["href"]}"
+    profiles << {name: name, location: location, profile_url: profile_url}
+  end
+  profiles
+end
+# class Scraper
+#
+#   def self.scrape_index_page(index_url)
+#     profiles = []
+#
+#     index = Nokogiri::HTML(open(index_url))
+#     students = index.css("student-card")
+#
+#     index.css(".roster-cards-container").each do |profile|
+#       profile.css(".student-card").each do |student|
+#     student_name = index.css(".student-name")
+#     :location => index.css(".student-location")
+#     profile_url = "http://127.0.0.1:4000/#{profile.css("a")[0]["href"]}"
+#     profiles << {name: student_name, location: location, profile_url: profile_url}
+#     end
+#   end
+#     profiles
+#
+#   end
+
+  def self.scrape_profile_page(profile_url)
+
+  end
+
+end
+>>>>>>> 66d1189b95d01a50a0242fd491ae78112cc05855
