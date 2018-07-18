@@ -16,12 +16,12 @@ class Student
 
   def self.create_from_collection(students_array)
     Scraper.students_array.each do |student|
-      binding.pry
+
       student
 
     end
     # students_array.each
-    # binding.pry
+     binding.pry
   end
 
   def add_student_attributes(attributes_hash)
