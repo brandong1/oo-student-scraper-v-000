@@ -6,6 +6,8 @@ class Student
   @@all = []
 
   def initialize(student_hash)
+    @name = name
+    @location = location
 
   end
 
