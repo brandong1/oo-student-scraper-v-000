@@ -21,6 +21,7 @@ class Student
       student[:name]
       #binding.pry
     end
+    student[:name]
     # students_array.each
      #binding.pry
   end
