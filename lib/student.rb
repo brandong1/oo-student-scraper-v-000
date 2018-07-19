@@ -16,7 +16,7 @@ class Student
 
   def self.create_from_collection(students_array)
     binding.pry
-    Scraper(students_array).each do |student|
+    students_array.each do |student|
 
       student
 
