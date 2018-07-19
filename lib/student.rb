@@ -15,7 +15,7 @@ class Student
   end
 
   def self.create_from_collection(students_array)
-    students_array.detect do |student|
+    students_array.collect do |student|
       #binding.pry
 
       student[:name]
