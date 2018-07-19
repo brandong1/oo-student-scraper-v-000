@@ -18,10 +18,10 @@ class Student
     students_array.detect do |student|
       #binding.pry
 
-      student = student[:name]
+      student[:name]
       #binding.pry
     end
-    student
+
     # students_array.each
      #binding.pry
   end
