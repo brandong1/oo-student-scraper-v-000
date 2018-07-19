@@ -19,7 +19,7 @@ class Student
       #binding.pry
 
       student[:name]
-      binding.pry
+      #binding.pry
     end
     # students_array.each
      #binding.pry
